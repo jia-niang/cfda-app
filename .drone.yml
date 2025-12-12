@@ -6,7 +6,7 @@ workspace:
 
 steps:
   - name: build
-    image: node:14
+    image: paperplanecc/baseline-node20:2025.11.30
     volumes:
       - name: yarncache
         path: /usr/local/share/.cache/yarn
