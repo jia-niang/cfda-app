@@ -3,6 +3,13 @@ module.exports = {
     process.env.NODE_ENV === 'production'
       ? 'https://cdn.paperplane.cc/paperplane-cfda/'
       : undefined,
+  css: {
+    loaderOptions: {
+      sass: {
+        silenceDeprecations: ['legacy-js-api'],
+      },
+    },
+  },
   configureWebpack: {
     externals: {
       BMap: 'BMap',
